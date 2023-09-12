@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <!-- nav -->
+        <nav>
+          <div class="circle">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </div>
+          <div class="circle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </nav>
+        <!-- end nav -->
+        <img src="./image/InShot_20230430_132726249.jpg" class="song-image" />
+        <h1>Cheri Cheri lady</h1>
+        <p>the best music for hearing</p>
+        <!-- audi -->
+        <audio id="song">
+          <source src="./aud/Cheri Cheri Lady.mp3" type="audio/mp4" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <!-- end audi -->
+
+        <div class="controls">
+          <div><i class="fa fa-backward" aria-hidden="true"></i></div>
+          <div>
+            <i
+              class="fa fa-play"
+              aria-hidden="true"
+              id="crtlIcon"
+              onclick="playPause()"
+            ></i>
+          </div>
+          <div><i class="fa fa-forward" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
